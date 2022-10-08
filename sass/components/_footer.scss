@@ -1,0 +1,124 @@
+//footer button
+
+.button-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 200px;
+  padding: 10px 28px;
+
+  &__icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+//footer form
+
+.form-subscribe {
+  margin-left: auto;
+}
+
+.form-subscribe__container {
+  display: flex;
+}
+
+.form-subscribe__input {
+  width: 358px;
+  margin-right: 12px;
+  padding: 0 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--secondary-background-studio);
+  outline: none;
+
+  transition: color 250ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    color: var(--primary-background-color);
+    border: 1px solid var(--primary-background-color);
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* address */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: start;
+
+  background-color: var(--secondary-background-studio);
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.address-wrapper {
+  margin-right: 70px;
+}
+
+.main-section__logo {
+  display: block;
+  margin-right: 0;
+
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.list-address__link {
+  color: var(--secondary-link-color);
+  font-style: normal;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-background-color);
+  }
+}
+
+.list-address {
+  padding: 0;
+
+  &__item:not(:last-child) {
+    margin-top: 9px;
+  }
+}
+
+.address-color {
+  color: var(--primary-background-color);
+}
+
+.social-description {
+  color: var(--primary-background-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.icon-socials {
+  fill: var(--primary-background-color);
+}
+
+.footer-icons {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
